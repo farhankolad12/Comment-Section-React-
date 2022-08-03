@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: hsl(228, 33%, 97%);
+  padding: 0.5rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+.comment {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+p span {
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+
+.user-info img {
+  width: 30px;
+}
+
+.user-info h3 {
+  color: hsl(212, 24%, 26%);
+}
+
+.user-info span {
+  color: hsl(211, 10%, 45%);
+}
+
+.comment p {
+  color: hsl(211, 10%, 45%);
+}
+
+.vote {
+  background-color: hsl(223, 19%, 93%);
+  border-radius: 10px;
+}
+
+.vote button {
+  border: none;
+  background-color: inherit;
+  border: none;
+}
+
+.vote span {
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+
+.reply-action {
+  color: hsl(238, 40%, 52%);
+  font-weight: 700;
+}
+
+.post-comment {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.post-comment .info-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-comment img {
+  width: 50px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem 0.5rem 1rem 0.5rem;
+  outline: none;
+  border-radius: 10px;
+  border: 3px solid hsl(223, 19%, 93%);
+}
+
+.info-btn button {
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border: none;
+  background-color: hsl(238, 40%, 52%);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.user-info p {
+  padding: 0.5rem;
+  background-color: hsl(238, 40%, 52%);
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  background-color: inherit;
+  font-weight: 700;
+  color: hsl(238, 40%, 52%);
+}
+
+.del-modal {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  padding: 1rem;
+}
+
+.del-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.del-container h3 {
+  color: hsl(212, 24%, 26%);
+}
+
+.del-container p {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.del-btns {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.del-btns .cancel {
+  background-color: hsl(211, 10%, 45%);
+  padding: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.del-btns .delete {
+  background-color: hsl(358, 79%, 66%);
+  padding: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.user-comment .user-info,
+.reply-comment .user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.reply-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.border {
+  height: 10rem;
+  border-left: 3px solid hsl(223, 19%, 93%);
+}
+
+.action-on-comments {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.vote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.reply-action {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}
